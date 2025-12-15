@@ -1,0 +1,309 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "poppins", sans-serif;
+    font-size: 100%;
+    line-height: 1.2;
+}
+
+h1 {
+    font-family: "caprasimo", serif;
+    font-size: 4em;
+    font-weight: 400;
+    padding-bottom: 20px;
+    line-height: 1;
+}
+
+/* remember this is in the picture gallery */
+h2 {
+    font-family: "caprasimo", serif;
+    font-size: 2em;
+    font-weight: 300;
+    padding: 0 30px 20px;
+}
+
+p {
+    padding-bottom: 30px; /* space between each paragraph */
+    line-height: 1.2;
+}
+
+.p1 {
+    padding-bottom: 5px; /* space between each paragraph */
+    line-height: 1.2;
+}
+
+
+.container {
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav {
+    background-color: black;
+    padding: 10px 30px;
+
+    display: flex;
+    flex: 1 0 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo img {
+    width: 100px;
+    padding-bottom: 0;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.nav-links a {
+    display: block;
+    color: white;
+    font-weight: 500;
+    font-size: 100%;
+    text-decoration: none;
+    padding: 0 0 0 15px;
+}
+
+.nav-links a:hover {
+    color: #FC4AF9
+}
+
+/* slideshow */
+.slideshow-container {
+  flex: 1 0 100%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 100%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: black;
+}
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+main {
+    background-color: white;
+    padding: 70px 30px;
+    flex: 1 1 70%;
+}
+
+.button {
+    display: inline-block;
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px 30px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.button li {
+    text-align: center;
+    list-style: none;
+    padding-bottom: 0;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.button:hover, .button li:hover, .button a:hover {
+    background-color: #FC4AF9;
+    color: #000;
+}
+
+aside {
+    background-color: white;
+    flex: 1 1 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+aside img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;  
+}
+
+/* .gallery {
+    flex: 1 0 100%;
+    justify-content: center;
+    padding: 20px 20px
+}
+
+
+.gallery-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.gallery-item {
+    width: 50%;
+}
+
+.gallery-item img {
+    width: 100%;
+    padding: 0 10px;
+} */
+
+footer {
+    background-color: #000;
+    flex: 1 0 100%;
+    align-items: end;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+    padding: 20px 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    padding-bottom: 0;
+}
+
+
+/* tablet */
+@media screen and (max-width: 800px){
+    
+     h1 {
+        font-size: 3.5em;
+    }
+
+    .container{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    body{
+        background-color: white;
+    }
+
+    nav {
+        flex: 1 0 100%;
+    }
+
+    .nav-logo img {
+        width: 100px;
+    }
+
+    main{
+    flex: 1 1 60%;
+    padding: 30px 30px;
+    }
+
+    aside{
+        flex: 1 1 40%;
+        padding: 30px 30px;
+        }
+
+    aside img {
+        width: 300px;
+        height: 300px;
+    }
+  
+}
+
+/* phone  */
+@media screen and (max-width: 600px){
+
+    h1 {
+        font-size: 3em;
+    }
+
+    body{
+        background-color: black;
+    }
+
+    nav {
+        flex: 1 0 100%;
+        padding: 10px;
+    }
+
+    .nav-logo img {
+        width: 50px;
+    }
+
+    main {
+        flex:1 1 80%;
+        padding: 20px;
+    }
+
+    aside {
+        flex: 1 1 20%;
+        padding: 0;
+    }
+
+    footer{
+        text-align: center;
+    }
+
+    .gallery-box {
+        flex-direction: column;
+    }
+
+    .gallery-item {
+        width: 100%;
+    }
+
+    .button {
+        margin-bottom: 5px;
+    }
+}

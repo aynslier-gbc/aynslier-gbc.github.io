@@ -37,11 +37,34 @@
         </div>
     </nav>
     
+ <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <img src="Images/Ad_GreyPoupon/GreyPoupon_SocialMedia_Elevate_07.webp" alt="Ad for Grey Poupon mustard. Man eating a comically large sandwich while a circus takes place around him " style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="Images/T3_MP2_Pitchbook-1.webp" alt="Bright pink background with white, green, and black scribbles. The word Kerfuffle with a large ! sits within the scribbles" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="Images/Ad_Spotify/OohAd_Spotify_Wall.webp" alt="A wall covered in posters for Spotify. Gen Z music lovers are depicted" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+</div>
+
     <main>
         <h1>Let's have some fun!</h1>
-        <p>Hello I’m Aynslie, a 2nd year graphic design student at George Brown Polytechnic, and a lover of all things silly! I design playful graphics and create striking illustrations.</p>
+        <div class="p1">Hello I’m Aynslie, a 2nd year graphic design student at George Brown Polytechnic, and a lover of all things silly! I design playful graphics and create striking illustrations.</div>
+        <br>
+        <p>My passion to learn and explore has led me from lo oking up obscure bands in retail to voraciously learning design programs. If there's something I don't know I'll learn it! </p>
         <div class="button">
-            <li><a href="contact_copy.html">Let's chat</a></li>
+            <li><a href="contact_copy.html">want to make something weird?</a></li>
         </div>
     </main>
 
@@ -50,28 +73,8 @@
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil blanditiis perferendis vel quidem quis. Sapiente quod iure recusandae odio, ipsa veritatis nam reprehenderit?</p> -->
     </aside>
 
- <!-- Slideshow container -->
-<div class="slideshow-container">
-
-    <h2>Recent work</h2>
-
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <img src="Images/Ad_GreyPoupon/GreyPoupon_SocialMedia_Elevate_07.webp" style="width:100%">
-  </div>
-
-  <div class="mySlides fade">
-    <img src="Images/T3_MP2_Pitchbook-1.webp" style="width:100%">
-  </div>
-
-  <div class="mySlides fade">
-    <img src="Images/Ad_Spotify/OohAd_Spotify_Wall.webp" style="width:100%">
-  </div>
-
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
+<script src="js/slideshow.js">
+</script>
 
 
     <!-- <div class="gallery">
@@ -91,32 +94,9 @@
 
     <footer>
         <p>&copy; Copyright 2025 Aynslie Risto. All Rights Reserved</p>
-        <img>
     </footer>
     </div>
 
 </body>
-
-<script>
-let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-</script>
 
 </html>
